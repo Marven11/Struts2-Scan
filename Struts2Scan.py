@@ -58,8 +58,6 @@ def get(url, headers=None, encoding='UTF-8'):
         return html
     except ConnectionError as e:
         return "ERROR:" + "HTTP连接错误"
-    except ConnectTimeout as e:
-        return "ERROR:" + "HTTP连接超时错误"
     except Exception as e:
         return 'ERROR:' + str(e)
 
@@ -79,8 +77,6 @@ def get_302(url, headers=None, encoding='UTF-8'):
         return html
     except ConnectionError as e:
         return "ERROR:" + "HTTP连接错误"
-    except ConnectTimeout as e:
-        return "ERROR:" + "HTTP连接超时错误"
     except Exception as e:
         return 'ERROR:' + str(e)
 
@@ -100,8 +96,6 @@ def get_stream(url, headers=None, encoding='UTF-8'):
         return '\r\n'.join(html).strip()
     except ConnectionError as e:
         return "ERROR:" + "HTTP连接错误"
-    except ConnectTimeout as e:
-        return "ERROR:" + "HTTP连接超时错误"
     except Exception as e:
         return 'ERROR:' + str(e)
 
@@ -117,8 +111,6 @@ def post(url, data=None, headers=None, encoding='UTF-8', files=None):
         return html
     except ConnectionError as e:
         return "ERROR:" + "HTTP连接错误"
-    except ConnectTimeout as e:
-        return "ERROR:" + "HTTP连接超时错误"
     except Exception as e:
         return 'ERROR:' + str(e)
 
@@ -137,8 +129,6 @@ def post_stream(url, data=None, headers=None, encoding='UTF-8', files=None):
         return '\r\n'.join(html).strip()
     except ConnectionError as e:
         return "ERROR:" + "HTTP连接错误"
-    except ConnectTimeout as e:
-        return "ERROR:" + "HTTP连接超时错误"
     except Exception as e:
         return 'ERROR:' + str(e)
 
@@ -175,8 +165,6 @@ def post_file(url, exp, headers=None, encoding='UTF-8'):
         return html
     except ConnectionError as e:
         return "ERROR:" + "HTTP连接错误"
-    except ConnectTimeout as e:
-        return "ERROR:" + "HTTP连接超时错误"
     except Exception as e:
         return 'ERROR:' + str(e)
 
