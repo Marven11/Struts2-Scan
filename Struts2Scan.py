@@ -35,7 +35,7 @@ S2-029,S2-032,S2-033,S2-037,S2-045,S2-046,S2-048,S2-052,S2-053,S2-devMode
 """
 
 default_headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36"
 }
 
 # 全局代理
