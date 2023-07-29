@@ -13,6 +13,7 @@ import urllib.request
 import urllib.parse
 import urllib.error
 import time
+import traceback
 from requests.exceptions import ChunkedEncodingError, ConnectionError, ConnectTimeout
 from urllib.parse import quote, unquote
 from functools import partial
@@ -1550,6 +1551,7 @@ if __name__ == '__main__':
     except KeyboardInterrupt as e:
         exit(0)
     except Exception as e:
+        traceback.print_exc()
         click.secho("[ERROR] {error}".format(error=e), fg='red')
         exit(0)
 
