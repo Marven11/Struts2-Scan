@@ -1487,7 +1487,7 @@ def main(info, version, url, file, name, data, header, encode, proxy, exec, reve
     if name and url:
         # 指定漏洞利用
         name = name.upper().replace('-', '_')
-        if name not in s2_list:
+        if name not in s2_dict.keys():
             click.secho("[ERROR] 暂不支持{name}漏洞利用".format(name=name), fg="red")
             exit(0)
         s = s2_dict[name](url, data, header, encode)
